@@ -1,10 +1,11 @@
 provider "aws" {
   region = local.region
+  profile = "larry"
 }
 
 locals {
   name   = "ecsdemo-frontend"
-  region = "us-west-2"
+  region = "eu-west-1"
 
   container_image = "public.ecr.aws/aws-containers/ecsdemo-frontend"
   container_port  = 3000 # Container port is specific to this app example
