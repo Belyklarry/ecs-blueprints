@@ -10,6 +10,7 @@ terraform {
   backend "s3" {
     bucket         = "larryterraformstatebvcket"
     key            = "root"
+    profile        = "larry"
     region         = "eu-west-1"
     encrypt        = true
     dynamodb_table = "larryterraformstate"
