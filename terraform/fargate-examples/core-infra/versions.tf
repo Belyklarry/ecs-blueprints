@@ -9,7 +9,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "larryterraformstatebvcket"
-    key            = "root"
+    key            = "terraform.tfstate"
     profile        = "larry"
     region         = "eu-west-1"
     encrypt        = true
