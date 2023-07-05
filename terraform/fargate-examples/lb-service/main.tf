@@ -1,6 +1,6 @@
 provider "aws" {
   region = local.region
-  profile = "larry"
+  profile = "default"
 }
 
 locals {
