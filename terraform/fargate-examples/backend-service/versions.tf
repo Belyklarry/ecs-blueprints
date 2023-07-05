@@ -7,7 +7,6 @@ terraform {
       version = "~> 4.43"
     }
   }
-
   backend "s3" {
     bucket         = "larryterraformstatebvcket"
     key            = "terraform.tfstate"
