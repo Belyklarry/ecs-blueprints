@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket         = "larryterraformstatebvcket"
     key            = "terraform-lb.tfstate"
-    profile        = "larry"
+    profile        = "default"
     region         = "eu-west-1"
     encrypt        = true
     dynamodb_table = "larryterraformstate"
