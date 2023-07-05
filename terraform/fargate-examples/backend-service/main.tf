@@ -4,7 +4,7 @@ provider "aws" {
 
 locals {
   name   = "ecsdemo-backend"
-  region = "us-west-2"
+  region = "us-west-1"
 
   container_image = "public.ecr.aws/aws-containers/ecsdemo-nodejs:c3e96da"
   container_port  = 3000 # Container port is specific to this app example
