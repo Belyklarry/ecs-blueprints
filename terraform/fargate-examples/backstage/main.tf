@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-1"
 }
 
 data "aws_caller_identity" "current" {}
 
 locals {
   name   = "unicorn-ui"
-  region = "us-west-2"
+  region = "eu-west-1"
 
   container_port = 7007 # Container port is specific to this app example
   container_name = "unicorn-ui"
